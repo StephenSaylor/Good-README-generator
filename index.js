@@ -50,9 +50,9 @@ const askQuestions = (questions) => {
 				licenses,				
 
 			}) => {
-const templateREADME = `"templateHTML(readme)"`
+const templateREADME = `"(readme)"`
 
-fs.writeFile("index.html", templateHTML, "utf8", (err) =>
+fs.writeFile("README.md", templateREADME, "utf8", (err) =>
 err ? console.log(err) : console.log('Success!'))
 			}
 		)
