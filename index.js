@@ -39,8 +39,12 @@ const questions = [
 		type: 'input',
 		message: 'Place application tests here!',
 		name: 'tests',
+	},
+	{
+		type: 'input',
+		message: 'Provide contact info for any questions',
+		name: 'questions',
 	}
-	
 ];
 
 const askQuestions = (questions) => {
@@ -53,8 +57,9 @@ const askQuestions = (questions) => {
 				installation,
 				usage,
 				username,
-				license,				
-
+				license,
+				tests,				
+				questions,
 			}) => {
 const templateREADME = `# Project Title : 
 ${title}
@@ -86,7 +91,7 @@ ${username}
 ${tests}
 
 ## Questions
-`;
+${questions}`;
 
 fs.writeFile("README.md", templateREADME, "utf8", (err) =>
 err ? console.log(err) : console.log('Success!'))
