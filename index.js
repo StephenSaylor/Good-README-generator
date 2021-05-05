@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer')
 const fs = require('fs')
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -31,8 +32,8 @@ const questions = [
 	},
 	{
 		type: 'input',
-		message: 'What licenses are used?',
-		name: 'licenses',
+		message: 'What license is used?',
+		name: 'license',
 	},
 	
 ];
@@ -47,7 +48,7 @@ const askQuestions = (questions) => {
 				installation,
 				usage,
 				username,
-				licenses,				
+				license,				
 
 			}) => {
 const templateREADME = `## Project Title 
@@ -60,8 +61,8 @@ ${description}
 ${installation}
 ## Usage
 ${usage}
-## Licenses
-${licenses}
+## License
+${license}
 ## Contributing
 ${username}
 ## Tests
@@ -69,7 +70,7 @@ ${username}
 ## Questions
 `
 
-fs.writeFile("README.md", templateREADME, "utf8", (err) =>
+fs.writeFile("README.md", , "utf8", (err) =>
 err ? console.log(err) : console.log('Success!'))
 			}
 		)
