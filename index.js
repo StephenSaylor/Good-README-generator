@@ -35,6 +35,11 @@ const questions = [
 		message: 'What license is used?',
 		name: 'license',
 	},
+	{
+		type: 'input',
+		message: 'Place application tests here!',
+		name: 'tests',
+	}
 	
 ];
 
@@ -52,10 +57,10 @@ const askQuestions = (questions) => {
 
 			}) => {
 const templateREADME = `# Project Title : 
-${data.title}
+${title}
 
 ## Description : 
-${data.description}
+${description}
 
 ## Table of Contents
 -[Installation](#installation)
@@ -66,18 +71,19 @@ ${data.description}
 -[Questions](#questions)
 
 ## Installation
-${data.installation}
+${installation}
 
 ## Usage
-${data.usage}
+${usage}
 
 ## License
-${data.license}
+${license}
 
 ## Contributing
-${data.username}
+${username}
 
 ## Tests
+${tests}
 
 ## Questions
 `;
