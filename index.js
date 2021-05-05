@@ -51,35 +51,53 @@ const askQuestions = (questions) => {
 				license,				
 
 			}) => {
-const templateREADME = `## Project Title 
-${title}
-## Description
-${description}
+const templateREADME = `# Project Title : 
+${data.title}
+
+## Description : 
+${data.description}
+
 ## Table of Contents
+-[Installation](#installation)
+-[Usage](#usage)
+-[License](#license)
+-[Contributing](#contributing)
+-[Test](#test)
+-[Questions](#questions)
 
 ## Installation
-${installation}
+${data.installation}
+
 ## Usage
-${usage}
+${data.usage}
+
 ## License
-${license}
+${data.license}
+
 ## Contributing
-${username}
+${data.username}
+
 ## Tests
 
 ## Questions
-`
+`;
 
-fs.writeFile("README.md", , "utf8", (err) =>
+fs.writeFile("README.md", templateREADME, "utf8", (err) =>
 err ? console.log(err) : console.log('Success!'))
 			}
 		)
 }
 
-// TODO: Create a function to initialize app
-function init() {
+askQuestions(questions)
 
-}
 
-// Function call to initialize app
-init();
+
+
+
+// // TODO: Create a function to initialize app
+// function init() {
+
+// }
+
+// // Function call to initialize app
+// init();
