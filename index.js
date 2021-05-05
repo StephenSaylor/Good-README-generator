@@ -50,7 +50,24 @@ const askQuestions = (questions) => {
 				licenses,				
 
 			}) => {
-const templateREADME = `"(readme)"`
+const templateREADME = `## Project Title 
+${title}
+## Description
+${description}
+## Table of Contents
+
+## Installation
+${installation}
+## Usage
+${usage}
+## Licenses
+${licenses}
+## Contributing
+${username}
+## Tests
+
+## Questions
+`
 
 fs.writeFile("README.md", templateREADME, "utf8", (err) =>
 err ? console.log(err) : console.log('Success!'))
@@ -62,7 +79,9 @@ err ? console.log(err) : console.log('Success!'))
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+
+}
 
 // Function call to initialize app
 init();
