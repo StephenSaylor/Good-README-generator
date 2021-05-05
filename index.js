@@ -49,7 +49,12 @@ const askQuestions = (questions) => {
 				username,
 				licenses,				
 
-			})
+			}) => {
+const templateREADME = `"templateHTML(readme)"`
+
+fs.writeFile("index.html", templateHTML, "utf8", (err) =>
+err ? console.log(err) : console.log('Success!'))
+			}
 		)
 }
 
