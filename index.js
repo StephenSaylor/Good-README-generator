@@ -31,9 +31,14 @@ const questions = [
 		name: 'username',
 	},
 	{
-		type: 'input',
-		message: 'What license is used?',
+		type: 'list',
+		message: 'Which license would you like to use?',
 		name: 'license',
+		choices: [
+			'MIT License: https://opensource.org/licenses/MIT',
+			'ZLIB License: https://opensource.org/licenses/Zlib',
+			'Mozilla License: https://opensource.org/licenses/MPL-2.0',
+		]
 	},
 	{
 		type: 'input',
@@ -61,10 +66,10 @@ const askQuestions = (questions) => {
 				tests,				
 				questions,
 			}) => {
-const templateREADME = `# Project Title : 
+const templateREADME = `# Project Title 
 ${title}
 
-## Description : 
+## Description  
 ${description}
 
 ## Table of Contents
