@@ -32,7 +32,7 @@ const questions = [
 	},
 	{
 		type: 'list',
-		message: 'Which license would you like to use?',
+		message: 'Which license would you like to use? (use arrows to navigate and enter to choose)',
 		name: 'license',
 		choices: [
 			'MIT License: https://opensource.org/licenses/MIT',
@@ -96,7 +96,7 @@ ${username}
 ${tests}
 
 ## Questions
-${questions}`;
+For any questions contact me here: ${questions}`;
 
 fs.writeFile("README.md", templateREADME, "utf8", (err) =>
 err ? console.log(err) : console.log('Success!'))
