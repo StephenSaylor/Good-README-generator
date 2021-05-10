@@ -18,6 +18,8 @@ First install inquirer then type 'node index' to run the application
 ## Usage
 To quickly create README's from question prompts in the command line
 
+https://drive.google.com/file/d/1FcuY2T1e7DLNjuCrp1Yqsbe5ZBV9Fxid/view
+
 ## License
 MIT License: https://opensource.org/licenses/MIT
 
