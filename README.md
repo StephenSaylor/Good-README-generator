@@ -1,8 +1,8 @@
 # Project Title 
-Project Title
+Good README Generator
 
 ## Description  
-Project Description
+This project creates a command-line application that generates high quality proessional README markdown files 
 
 ## Table of Contents
 -[Installation](#installation)
@@ -13,10 +13,10 @@ Project Description
 -[Questions](#questions)
 
 ## Installation
-install inquirer then node index in the terminal
+First install inquirer then type 'node index' to run the application
 
 ## Usage
-to create quick professional readme files
+To quickly create README's from question prompts in the command line
 
 ## License
 MIT License: https://opensource.org/licenses/MIT
@@ -25,7 +25,7 @@ MIT License: https://opensource.org/licenses/MIT
 Stephen Saylor
 
 ## Tests
-N/A
+n/a
 
 ## Questions
 For any questions contact me here: anentitymusic@gmail.com
